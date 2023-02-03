@@ -1,0 +1,14 @@
+name: "Share GraphQL Federated Schemas"
+description: "😎 Share `GraphQL Federated Schemas` on Backend server to Frontend developers!"
+
+inputs:
+  base-server-url:
+    description: "Base GraphQL Server URL"
+    required: true
+  schema-file-pathname:
+    description: "schema.graphql Pathname (ex: ./schema.graphql)"
+    required: true
+
+runs:
+  using: "node16"
+  main: "dist/index.js"
